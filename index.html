@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe4e1;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width:200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ff85c0;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Hola, PECAS!</h1>
+    <p>Solo quería recordarte lo especial que eres para mí. ¡Tu sonrisa ilumina mi día!</p>
+    <div class="image-container">
+        <img src="FOTOS/imagen2.jpg" alt="Eres increíble">
+        
+        <img src="FOTOS/IMAGEN4.jpeg" alt="Juntos somos fuertes">
+        <img src="FOTOS/IMAGEN5.jpeg" alt="">
+        <img src="FOTOS/IMAGEN6.jpeg" alt="">
+        <img src="FOTOS/IMAGEN7.jpeg" alt="">
+        <img src="FOTOS/IMAGEN3.jpg" alt="Sonríe, eres bella">
+       
+    </div>
+    <button onclick="mostrarMensaje()">Haz clic para una sorpresa</button>
+    <p id="mensaje-sorpresa" class="hidden"> No importa lo que pase, siempre estaré a tu lado. Eres mi persona favorita y haré todo lo posible para verte feliz¡Eres la mejor parte de mi vida! TE AMO💖</p>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje-sorpresa").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
